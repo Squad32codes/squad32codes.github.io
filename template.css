@@ -1,0 +1,14 @@
+.logo{
+  text-align:center;
+}
+
+.allcontent{
+    background: white;
+    border-style:solid;
+    border-radius:25px;
+    margin:150px;
+    padding:25px;
+    margin-top:20px;
+    margin-bottom:5px;
+   padding-bottom:100px;
+}
