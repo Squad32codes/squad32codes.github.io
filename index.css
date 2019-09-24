@@ -2,6 +2,13 @@ h1{
     text-align:center;
 }
 
+<<<<<<< HEAD
+=======
+.logo{
+  text-align:center;
+  width: 50px;
+}
+>>>>>>> 025875e8e7b9814d0494d108298cc0b0d75a5105
 
 .button{
     text-align:center;
