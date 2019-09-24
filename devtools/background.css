@@ -2,10 +2,13 @@ h1{
     text-align:center;
 }
 
+<<<<<<< HEAD:devtools/background.css
+=======
 .logo{
   text-align:center;
   height: 200px;
 }
+>>>>>>> b9806d54e98a95c357c2169259c300b985ceb0d3:background.css
 
 .button{
     text-align:center;
@@ -28,17 +31,6 @@ h1{
     border:0;
     border-radius:5px;
     font-size:15px;
-}
-
-   .allcontent{
-    background: white;
-    border-style:solid;
-    border-radius:25px;
-    margin:150px;
-    padding:25px;
-    margin-top:20px;
-    margin-bottom:5px;
-   padding-bottom:100px;
 }
 
 .signup{
