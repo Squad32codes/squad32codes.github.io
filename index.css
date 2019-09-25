@@ -46,6 +46,7 @@ h1{
 }
 .logo img{
     height: 300px;
+    margin: auto;
 }
 .allContent{
        background: white;
