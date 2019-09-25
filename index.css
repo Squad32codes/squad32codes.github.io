@@ -50,14 +50,11 @@ h1{
         text-align:center;
     }
     .logo img{
-        position: relative;
         height: 200px;
-        margin: auto;
-
     }
 
     /*
-    Dont copy past here: this is website exclusive content!
+    Dont Copy this section: web edition exclusive!
     */
     .allContent{
        background: white;
@@ -70,4 +67,7 @@ h1{
        padding-bottom:100px;
         max-width: 900px;
    }
+   /*
+    End of no copy section
+   */
 
