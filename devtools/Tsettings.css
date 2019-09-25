@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
 
  .allContent{
        background: white;
@@ -15,25 +10,24 @@
        padding-bottom:100px;
         max-width: 900px;
    }
+
 /*
-Toggle switch styles
+Styling for switchs
 */
-/* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
+text-align: right;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -72,7 +66,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
+
 .slider.round {
   border-radius: 34px;
 }
@@ -81,7 +75,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /*
-End switch styles
+End Switch Style
 The drawer navigator
 */
 body {
@@ -131,56 +125,3 @@ body {
   bottom: 70px;
   color: red;
 }
-</style>
-</head>
-<body style="background-image:url(img/background.png)">
-<div class="allContent">
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="home.html">Home</a>
-        <a href="condition.html">How was your day?</a>
-        <a href="#">Get Advice</a>
-        <a href="#">Important Contacts</a>
-        <div id="settings">
-            <a href="settings.html">Settings</a>
-        </div>
-    </div>
-
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-    <script>
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "300px";
-    }
-
-    function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    }
-    function darkNav() {
-    document.getElementById("mySidenav").style.background = darkgrey;
-    }
-    </script>
-
-    <!--End Drawer Navigator-->
-
-    <h1> Settings: </h1>
-<p> send morning notifications </p>
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
-</div>
-<script>
-/*
-var themeSwitch = document.getElementById("myCheck").checked;
-if (themeSwitch === true){
-    document.getElementById("settings").style.allContent = black;
-}
-not implemented yeet
-*/
-
-
-</script>
-</body>
-</html>
