@@ -46,8 +46,11 @@ h1{
 }
 .logo img{
     height: 300px;
-    margin: auto;
+    text-align: center;
 }
+.logo{
+        text-align:center;
+    }
 .allContent{
        background: white;
        border-style:solid;
