@@ -1,28 +1,25 @@
 <!DOCtype HTML>
 <head>
 
-  <title>HappyBytes Login</title>
+    <title>HappyBytes Login</title>
 
     <style>
 
-    .logo{
+    .loginInfo{
         text-align:center;
     }
 
-    .textbox{
-        text-align:center;
-    }
-
-    .login{
+    .text{
         border-radius:5px;
     }
 
-    .button{
+    .login{
         border-radius:5px;
         border:0;
         padding: 10px;
         padding-right:40px;
         padding-left:40px;
+        background-color:#c3e86d;
     }
 
     .new{
@@ -37,7 +34,7 @@
         text-align:center;
     }
 
-    .back{
+    #backButton{
         border-radius:5px;
         border:0;
         padding: 10px;
@@ -45,7 +42,7 @@
         padding-left:40px;
     }
 
-    .backbutton{
+    .back{
         padding-top:100px;
     }
 
@@ -54,45 +51,59 @@
 
     }
 
-   .allContent{
-    background: white;
-    border-style:solid;
-    border-radius:25px;
-    margin:150px;
-    padding:25px;
-    margin-top:20px;
-    margin-bottom:5px;
-   padding-bottom:100px;
-    max-width: 900px;
-}
+   .logo{
+        text-align:center;
+    }
+    .logo img{
+        height: 200px;
+    }
+
+    /*
+    Dont Copy this section: web edition exclusive!
+    */
+    .allContent{
+       background: white;
+       border-style:solid;
+       border-radius:25px;
+       margin:auto;
+       padding:25px;
+       margin-top:20px;
+       margin-bottom:5px;
+       padding-bottom:100px;
+        max-width: 900px;
+   }
+   /*
+    End of no copy section
+   */
+
    </style>
 </head>
 
-<body style="background-image:url(images/background.png)">
-<div class="allContent">
-   <div class="logo">
-        <img src="images/logo.jpg">
+<body style="background-image:url(img/background.png)">
+    <div class="allContent">
 
-   </div>
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
 
-    <div class="textbox">
-        <form action="login.html">
-            <br> <input type="text" name="Username" placeholder="Username" class="login"><br>
-            <br> <input type="text" name="password" placeholder="Password" class="login"><br>
+        <div class="loginInfo">
+            <form action="login.html">
+                <br> <input type="text" name="Username" placeholder="Username" class="text"><br>
+                <br> <input type="text" name="password" placeholder="Password" class="text"><br>
 
-            <div id="loginButton">
-                <a href="mainpage.html"> <button type="button" class="button">login</button></a>
-            </div>
-        </form>
+                <div id="loginButton">
+                    <a href="home.html"> <button type="button" class="login">login</button></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="createone">
+            <p>Don't have an account?</p>
+            <a href="signup.html"><button type="button" class="new">Create one</button></a>
+        </div>
+
+        <div class="back">
+            <a href="index.html"><button type="button" id="backButton">Back</button></a>
+        </div>
     </div>
-
-    <div class="createone">
-        <p>Don't have an account?</p>
-        <a href="signup.html"><button type="button" class="new">Create one</button></a>
-    </div>
-
-    <div class="backbutton">
-        <a href="index.html"><button type="button" class="back">Back</button></a>
-    </div>
-</div>
 </body>
