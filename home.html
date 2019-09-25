@@ -3,6 +3,21 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+.allContent{
+       background: white;
+       border-style:solid;
+       border-radius:25px;
+       margin:auto;
+       padding:25px;
+       margin-top:20px;
+       margin-bottom:5px;
+       padding-bottom:100px;
+        max-width: 900px;
+   }
+/*
+The Drawer Navigator
+*/
 body {
   font-family: "Lato", sans-serif;
 }
@@ -52,31 +67,39 @@ body {
 }
 </style>
 </head>
-<body>
-
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="home.html">Home</a>
-    <a href="condition.html">How was your day?</a>
-    <a href="#">Get Advice</a>
-    <a href="#">Important Contacts</a>
-    <div id="settings">
-        <a href="#">Settings</a>
+<body style="background-image:url(img/background.png)">
+<div class="allContent">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="condition.html">How was your day?</a>
+        <a href="#">Get Advice</a>
+        <a href="#">Important Contacts</a>
+        <div id="settings">
+            <a href="#">Settings</a>
+        </div>
     </div>
+
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+        function darkNav() {
+        document.getElementById("mySidenav").style.background = darkgrey;
+        }
+    </script>
+<!--End Drawer Navigator-->
+
+<h1> Welcome to happybytes (username here) </h1>
+<p> Our mission: to help you and many others take control of their sadness and thrive in life </p>
+<h2> What is yours? </h2>
 </div>
-
-
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-
 </body>
 </html>
