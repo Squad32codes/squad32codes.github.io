@@ -3,6 +3,8 @@ h1{
 }
 
 
+
+
 .button{
     text-align:center;
 
@@ -49,11 +51,10 @@ h1{
     }
     .logo img{
         height: 200px;
-        margin: auto;
     }
 
     /*
-    Dont copy past here: this is website exclusive content!
+    Dont Copy this section: web edition exclusive!
     */
     .allContent{
        background: white;
@@ -66,4 +67,7 @@ h1{
        padding-bottom:100px;
         max-width: 900px;
    }
+   /*
+    End of no copy section
+   */
 
