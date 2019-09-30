@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Settings</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="mainScreens.css">
 <style>
@@ -13,8 +14,8 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">Home</a>
         <a href="condition.html">How was your day?</a>
-        <a href="#">Get Advice</a>
-        <a href="#">Important Contacts</a>
+        <a href="getadvice.html">Get Advice</a>
+        <a href="contacts.html">Important Contacts</a>
         <div id="settings">
             <a href="settings.html">Settings</a>
         </div>
@@ -34,6 +35,9 @@
     function darkNav() {
     document.getElementById("mySidenav").style.background = darkgrey;
     }
+    function myFunction() {
+  alert('Morning notifications are on');
+    }
     </script>
 
     <!--End Drawer Navigator-->
@@ -41,7 +45,8 @@
     <h1> Settings: </h1>
 <p> send morning notifications </p>
   <label class="switch">
-  <input type="checkbox">
+  <!--<button type="checkbox" onclick="setTimeout(myFunction, 3000);"></button>-->
+  <input type="checkbox" onclick="setTimeout(myFunction, 1000)">
   <span class="slider round"></span>
 </label>
 </div>
