@@ -34,6 +34,9 @@
     function darkNav() {
     document.getElementById("mySidenav").style.background = darkgrey;
     }
+    function myFunction() {
+  alert('Morning notifications are on');
+}
     </script>
 
     <!--End Drawer Navigator-->
@@ -41,7 +44,7 @@
     <h1> Settings: </h1>
 <p> send morning notifications </p>
   <label class="switch">
-  <a href="index.html"><button type="checkbox"></button></a>
+  <button type="checkbox" onclick="setTimeout(myFunction, 3000);"></button>
   <span class="slider round"></span>
 </label>
 </div>
