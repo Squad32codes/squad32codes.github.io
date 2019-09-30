@@ -1,0 +1,71 @@
+
+    .loginInfo{
+        text-align:center;
+    }
+
+    .text{
+        border-radius:5px;
+    }
+
+    .login{
+        border-radius:5px;
+        border:0;
+        padding: 10px;
+        padding-right:40px;
+        padding-left:40px;
+        background-color:#c3e86d;
+    }
+
+    .new{
+        border-radius:5px;
+        border:0;
+        padding: 10px;
+        padding-right:23px;
+        padding-left:23px;
+    }
+
+    .createone{
+        text-align:center;
+    }
+
+    #backButton{
+        border-radius:5px;
+        border:0;
+        padding: 10px;
+        padding-right:40px;
+        padding-left:40px;
+    }
+
+    .back{
+        padding-top:100px;
+    }
+
+    #loginButton{
+        margin-top: 10px;
+
+    }
+
+   .logo{
+        text-align:center;
+    }
+    .logo img{
+        height: 200px;
+    }
+
+    /*
+    Dont Copy this section: web edition exclusive!
+    */
+    .allContent{
+       background: white;
+       border-style:solid;
+       border-radius:25px;
+       margin:auto;
+       padding:25px;
+       margin-top:20px;
+       margin-bottom:5px;
+       padding-bottom:100px;
+        max-width: 900px;
+   }
+   /*
+    End of no copy section
+   */
