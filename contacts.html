@@ -10,6 +10,7 @@
 </style>
 </head>
 <body style="background-image:url(img/background.png)">
+<div class="allContent">
 <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">Home</a>
@@ -20,21 +21,21 @@
             <a href="settings.html">Settings</a>
         </div>
     </div>
+
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
     <script>
-        function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
-        }
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    }
 
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        }
-        function darkNav() {
-        document.getElementById("mySidenav").style.background = darkgrey;
-        }
-        </script>
-<div class="allContent">
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+    function darkNav() {
+    document.getElementById("mySidenav").style.background = darkgrey;
+    }
+    </script>
 <div class="textbox">
 <input type="textbox" placeholder="counsler phone number" class="phonenumber">
 <button type="button" class="phonenumber">Call</button>
