@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
 <head>
-<title>Settings</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Important contacts</title>
 <link rel="stylesheet" href="mainScreens.css">
 <style>
-
+    .phonenumber{
+    border-radius:5px;
+    padding:5px;
+    }
 </style>
 </head>
 <body style="background-image:url(img/background.png)">
 <div class="allContent">
-    <div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">Home</a>
         <a href="condition.html">How was your day?</a>
@@ -20,7 +21,6 @@
             <a href="settings.html">Settings</a>
         </div>
     </div>
-
 
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -35,34 +35,18 @@
     function darkNav() {
     document.getElementById("mySidenav").style.background = darkgrey;
     }
-    function myFunction() {
-    alert('Morning notifications are on');
-    //document.getElementById("switch").checked = true;
-    //{
-    //alert="Morning notifications are on";
-    //}
-  }
-
     </script>
-
-    <!--End Drawer Navigator-->
-
-    <h1> Settings: </h1>
-<p> send morning notifications </p>
-  <label class="switch">
-  <!--<button type="checkbox" onclick="setTimeout(myFunction, 3000);"></button>-->
-  <input type="checkbox" onclick="setTimeout(myFunction, 1000)" id="switch">
-  <span class="slider round"></span>
-</label>
+<div class="textbox">
+<input type="textbox" placeholder="counsler phone number" class="phonenumber">
+<button type="button" class="phonenumber">Call</button>
+<br>
+<input type="textbox" placeholder="other" class="phonenumber">
+<button type="button" class="phonenumber">Call</button>
+<br>
+<input type="textbox" placeholder="other" class="phonenumber">
+<button type="button" class="phonenumber">Call</button>
+<br>
+<!--<button type="button" class="phonenumber">Call 911</button>app only-->
 </div>
-<script>
-/*
-var themeSwitch = document.getElementById("myCheck").checked;
-if (themeSwitch === true){
-    document.getElementById("settings").style.allContent = black;
-}
-not implemented yeet
-*/
-</script>
+</div>
 </body>
-</html>

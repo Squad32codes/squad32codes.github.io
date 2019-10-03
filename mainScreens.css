@@ -73,6 +73,8 @@ Toggle switch styles
   display: inline-block;
   width: 60px;
   height: 34px;
+  border:0;
+
 }
 
 /* Hide default HTML checkbox */
