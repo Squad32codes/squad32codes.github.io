@@ -10,17 +10,19 @@
 }
 </style>
 </head>
-<body style="background-image:url(img/background.png)">
+<body style="background-image:url(img/background.png)" onload="username()">
 <div class="allContent">
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="home.html">Home</a>
-        <a href="condition.html">How was your day?</a>
-        <a href="#">Get Advice</a>
-        <a href="#">Important Contacts</a>
-        <div id="settings">
-            <a href="settings.html">Settings</a>
-        </div>
+        <div id="onPage">
+            <a href="home.html">Home</a>
+            </div>
+            <a href="condition.html">How was your day?</a>
+            <a href="#">Get Advice</a>
+            <a href="#">Important Contacts</a>
+            <div id="settings">
+                <a href="settings.html">Settings</a>
+            </div>
     </div>
 
 
@@ -37,13 +39,13 @@
         function darkNav() {
         document.getElementById("mySidenav").style.background = darkgrey;
         }
-        function myFunction() {
+        function username() {
         var txt;
         var person = prompt("Please enter your username:", "Username");
         if (person == null || person == "") {
-        txt = "enter user name";
+        txt = "reload website";
         } else {
-        txt = "Welcome " + person + "! To happybytes!";
+        txt = "Welcome to happybytes " + person + "!";
         }
         document.getElementById("username").innerHTML = txt;
         document.getElementById("after").style.visibility="hidden";
@@ -52,7 +54,7 @@
     </script>
 <!--End Drawer Navigator-->
 <br>
-<button type="button" onclick="myFunction()" id="after">Enter Username</button>
+<!--<button type="button" onclick="username()" id="after">Enter Username</button>-->
 <h1 id="username"></h1>
 <!--<h1> Welcome to happybytes (username here) </h1>-->
 <p> Our mission: to help you and many others take control of their sadness and thrive in life </p>
