@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 <link rel="stylesheet" href="mainScreens.css">
 <style>
 #after{
     border:0;
     border-radius:5px;
 }
+
+
 </style>
 </head>
 <body style="background-image:url(img/background.png)" onload="username()">
 <div class="allContent">
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<<<<<<< HEAD
-        <div id="onPage">
-            <a href="home.html">Home</a>
-            </div>
-            <a href="condition.html">How was your day?</a>
-            <a href="#">Get Advice</a>
-            <a href="#">Important Contacts</a>
-            <div id="settings">
-                <a href="settings.html">Settings</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="onPage">
+                <a href="home.html">Home</a>
+                </div>
+                <a href="condition.html">How was your day?</a>
+                <a href="#">Get Advice</a>
+                <a href="#">Important Contacts</a>
+                <div id="settings">
+                    <a href="settings.html">Settings</a>
+                </div>
             </div>
 
-=======
-        <a href="home.html">Home</a>
-        <a href="condition.html">How was your day?</a>
-        <a href="getadvice.html">Get Advice</a>
-        <a href="contacts.html">Important Contacts</a>
-        <div id="settings">
-            <a href="settings.html">Settings</a>
-        </div>
->>>>>>> a56aef99711e1f9ee605aa4b90bc938b2055c9fe
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+            function darkNav() {
+            document.getElementById("mySidenav").style.background = darkgrey;
+            }
+            function username() {
+            var txt;
+            var person = prompt("Please enter your username:", "Username");
+            if (person == null || person == "") {
+            txt = "reload website";
+            } else {
+            txt = "Welcome to happybytes " + person + "!";
+            }
+            document.getElementById("username").innerHTML = txt;
+            document.getElementById("after").style.visibility="hidden";
+            }
+
+        </script>
+
+    <!--End Drawer Navigator-->
+    <br>
+    <!--<button type="button" onclick="username()" id="after">Enter Username</button>-->
+    <h1 id="username"></h1>
+    <!--<h1> Welcome to happybytes (username here) </h1>-->
+    <p> Our mission: to help you and many others take control of their sadness and thrive in life </p>
+    <h2> What is yours? </h2>
     </div>
-
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-    <script>
-        function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
-        }
-
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        }
-        function darkNav() {
-        document.getElementById("mySidenav").style.background = darkgrey;
-        }
-        function username() {
-        var txt;
-        var person = prompt("Please enter your username:", "Username");
-        if (person == null || person == "") {
-        txt = "reload website";
-        } else {
-        txt = "Welcome to happybytes " + person + "!";
-        }
-        document.getElementById("username").innerHTML = txt;
-        document.getElementById("after").style.visibility="hidden";
-        }
-
-    </script>
-<!--End Drawer Navigator-->
-<br>
-<!--<button type="button" onclick="username()" id="after">Enter Username</button>-->
-<h1 id="username"></h1>
-<!--<h1> Welcome to happybytes (username here) </h1>-->
-<p> Our mission: to help you and many others take control of their sadness and thrive in life </p>
-<h2> What is yours? </h2>
 </div>
 </body>
 </html>
