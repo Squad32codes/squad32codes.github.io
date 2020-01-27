@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<head>
+    <title>HappyBytes Login</title>
+    <link rel="stylesheet" href="welcomeScreens.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <script src="lib/js/jquery.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <style>
+
+
+    .signUpInfo{
+        text-align:center;
+    }
+
+    .textBox{
+        border-radius:5px;
+    }
+
+    #toHome .signUp{
+        border-radius:5px;
+        border:0;
+        padding: 10px;
+        padding-right:35px;
+        padding-left:35px;
+        background-color:#c3e86d;
+        margin-top: 10px;
+    }
+
+    #butt {
+        margin-top:10px;
+    }
+    .backButton{
+      margin-top:100px;
+    }
+    .back #backButton{
+        border-radius:5px;
+        border:0;
+        padding: 10px;
+        padding-right:100px;
+        padding-left:100px;
+    }
+
+    .haveAccount{
+        text-align:center;
+    }
+
+    #login{
+        border:0;
+        border-radius:5px;
+        padding: 10px;
+        padding-right:40px;
+        padding-left:40px;
+    }
+    .back{
+    text-align:center;
+    margin-top:30px;
+    }
+#scale, #signup{
+    width: 140px;
+}
+ #signupIssue{
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: red;
+
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="allContent">
+    <div class="logo">
+        <img src="img/logo.png">
+    </div>
+
+    <div class="signUpInfo">
+        <form action="login.html">
+            <br> <input type="text" name="email" placeholder="E-mail" class="textBox" id="emailInput" ><br>
+            <br> <input type="text" name="username" placeholder="Username" class="textBox" id="userInput" ><br>
+            <br> <input type="text" name="firstname" placeholder="First Name" class="textBox" id="fNameInput"><br>
+            <br> <input type="text" name="lastname" placeholder="Last Name" class="textBox" id="lNameInput"><br>
+            <br> <input type="password" name="password" placeholder="Password" class="textBox" id="passInput"><br>
+            <br> <input type="password" name="password" placeholder="Re-enter Password" class="textBox" id="rePassInput"><br>
+            <br>
+            <div class="container" id="signupIssue"></div>
+            <div id="toHome">
+                <button type="button" class="btn btn-outline-primary" id="signup" onclick="signUP()">Create Account</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="back">
+        <a href="index.html"><button type="button" class="btn btn-outline-secondary" id="scale">Back</button></a>
+    </div>
+
+<script>
+    var inputA = document.getElementById("emailInput");
+    var inputB = document.getElementById("userInput");
+    var inputC = document.getElementById("fNameInput");
+    var inputD = document.getElementById("lNameInput");
+    var inputE = document.getElementById("passInput");
+    var inputF = document.getElementById("rePassInput");
+
+function signUP (){
+
+    if (inputA.value != "" && inputB.value != "" && inputC.value != "" && inputD.value != "" && inputE.value != "" && inputF.value != ""){
+        if(inputE.value == inputF.value){
+            window.location.replace("home.html");
+        } else {document.getElementById("signupIssue").innerHTML = "<div class='alert alert-danger' role='alert'>Passwords Must Match</div>"}
+    } else {document.getElementById("signupIssue").innerHTML = "<div class='alert alert-danger' role='alert'>Please Fill Out ALL Elements</div>"}
+}
+
+</script>
+
+</div>
+</body>

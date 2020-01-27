@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mainScreens.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/jquery.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/mainPages.js"></script>
+
+</head>
+
+<body>
+
+<div id="navi"></div>
+
+    <!--Top Bar-->
+    
+
+    <!--<h1> Welcome to happybytes (username here) </h1>-->
+    <div class="text-center">
+        <h1 class="heading">Our Mission:</h1>
+        <p class="font-italic" style="padding-left:50px; padding-right:50px">"To help you and many others take control of their sadness and thrive in life"</p>
+    </div>
+
+    <div class="text-center" style="padding: 0px 50px">
+        <h4 class="heading" style="margin-bottom:10">What is your mission statement?</h4>
+        <textarea class="w-100" placeholder="Type your mission statement here!" style="margin-bottom:15px; padding: 10px;"></textarea>
+    </div>
+
+    <!-- Modal -->
+    <!-- Trigger/Open The Modal -->
+    <div class="byteOfTheDay">
+        <button class="btn btn-outline-primary" id="botdBtn">Byte of the Day</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="botdModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Byte of the day:</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <placeholder class="font-italic" id="botdQuote"></placeholder>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

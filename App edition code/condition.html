@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mainScreens.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/jquery.js"></script>
+    <script src="js/surveyComplex.js"></script>
+    <script src="js/mainPages.js"></script>
+    <script type="text/javascript">
+    var s = document.createElement('script');
+    s.innerHTML = window.android.getFileContents();
+    document.head.appendChild(s);
+    </script>
+    <style>
+.takeSurveyButton{
+    text-align: center;
+}
+.topBar {
+            position: sticky;
+            z-index: 10;
+        }
+        .custom-range{
+
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 50px;
+        }
+
+        .question{
+            margin-bottom: 20px;
+
+       }
+    </style>
+</head>
+<body>
+
+
+<div class="allContent">
+<div id="navi"></div>
+
+    <h2 class="text-center" style="margin-top:50px; padding: 0px 25px"> Take the survey here and we will give you advice to help improve your day! </h2>
+
+
+    <!-- Modal -->
+    <!-- Trigger/Open The Modal -->
+    <div class="takeSurveyButton" style="margin-top:25px">
+    <button class="btn btn-outline-primary" id="myBtn">Take Survey</button>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Complex Survey -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>How was your day Survey:</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+               <div class="container-fluid">
+    <br>
+
+                   <label style="margin-bottom: 30px;font-weight:bold;font-size:20px;" for="conditionSlider">Answer the questions below and we will try to find ways to improve your day!</label><br>
+                   <label class="font-italic question" for="conditionSlider">How was your day?</label>
+                   <div class="row">
+                       <div style="width:3%">1</div>
+                       <div style="width:94%; font-weight:bold"><input type="range" class="custom-range" min="1" max="10" id="conditionSlider"></div>
+                       <div style="width:3%"> 10</div>
+                   </div>
+
+                   <label class="font-italic question" for="conditionSlider">Do you feel you've completed all that you've wanted today?</label>
+                <div class="row">
+                    <div style="width:3%">1</div>
+                    <div style="width:94%; font-weight:bold"><input type="range" class="custom-range" min="1" max="10" id="conditionSlider2"></div>
+                    <div style="width:3%"> 10</div><br>
+                    </div>
+                   <label class="font-italic question" for="conditionSlider">Do you think that things were on your side today?</label>
+            <div class="row">
+                <div style="width:3%">1</div>
+                <div style="width:94%; font-weight:bold"><input type="range" class="custom-range" min="1" max="10" id="conditionSlider3"></div>
+                <div style="width:3%"> 10</div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <br>
+        <br>
+<div class="text-center">
+    <button id='okButton' onclick="myFunction()">Finished? Click me!</button>
+</div>
+    <div id='sliderValue'>
+
+</div>
+
+            </div>
+        </div>
+
+    </div>
+<script>
+
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+window.onclick = function(event) {
+  if (!event.target.matches('.profilePic')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</div>
+</body>
+</html>
